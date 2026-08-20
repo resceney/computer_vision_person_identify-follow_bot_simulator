@@ -1,0 +1,49 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/humans/pedestrian/protos/Pedestrian.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.4297421725604147 0.13371200726637428 0.8929965085238866 2.599569307908889
+  position 6.293001542826361 -4.381356382588199 9.774309090600216
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+}
+E-puck {
+  hidden position_0_0 737.5078787405573
+  hidden position_0_1 940.5101446250849
+  hidden rotation_1 0 -0.9999999999999999 0 3.9079875066338876
+  hidden rotation_2 0 -1 0 1.9676514518530948
+  translation 3.98129 0.711594 -3.43006
+  rotation -8.928347481493855e-05 3.9764267887953195e-05 -0.9999999952236319 -2.2963902582989655
+  controller "robot_controller"
+}
+SolidBox {
+  translation -1.67015e-08 0.23 0.82
+  rotation -0.9999916482273697 0.004086988562297277 9.589706626575503e-09 -5.307179586466759e-06
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+Pedestrian {
+  translation -4.51 0.21 1.27
+}
